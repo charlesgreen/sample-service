@@ -1,6 +1,4 @@
-ARG PROJECT_ID
-
-FROM gcr.io/$PROJECT_ID/golang:latest AS base
+FROM golang:latest AS base
 WORKDIR /app
 ENV GO111MODULE=on
 ENV	CGO_ENABLED=0
